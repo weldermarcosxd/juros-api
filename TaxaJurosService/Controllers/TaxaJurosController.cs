@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using TaxaJurosService.Models;
 
 namespace TaxaJurosService.Controllers
 {
@@ -18,10 +19,14 @@ namespace TaxaJurosService.Controllers
         }
 
         [HttpGet]
-        public decimal GetAsync()
+        public IActionResult GetAsync()
         {
-            _logger.LogInformation("obtendo taxa de juros");
-            return _configuration.GetValue<decimal>("PercentualJuros");
+            _logger.LogInformation("Obtendo taxa de juros");
+            var configuracoesFinanceiras = _configuration.GetSection("ConfiguracoesFinanceiras").Get<ConfiguracoesFinanceiras>();
+            if (configuracoesFinanceiras is null)
+                return BadRequest("As configurações financeiras não foram informadas");
+
+            return Ok(configuracoesFinanceiras.PercentualJuros);
         }
     }
 }

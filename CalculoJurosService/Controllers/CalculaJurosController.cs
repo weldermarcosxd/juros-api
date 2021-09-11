@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
@@ -10,18 +11,20 @@ namespace CalculoJurosService.Controllers
     public class CalculaJurosController : ControllerBase
     {
         private readonly ILogger<CalculaJurosController> _logger;
+        private readonly IJurosService _jurosService;
 
-        public CalculaJurosController(ILogger<CalculaJurosController> logger)
+        public CalculaJurosController(ILogger<CalculaJurosController> logger, IJurosService jurosService)
         {
             _logger = logger;
+            _jurosService = jurosService;
         }
 
         [HttpGet]
-        public async Task<double> Get([FromQuery] decimal valorInicial, [FromQuery] int meses)
+        public async Task<IActionResult> Get([FromQuery] decimal valorInicial, [FromQuery] int meses)
         {
             _logger.LogInformation("Calculando juros");
-            var x = (double)valorInicial * Math.Pow(1 + 0.01, meses);
-            return Math.Round(x, 2);
+            var montante = await _jurosService.CalculaValorJurosAsync(valorInicial, meses);
+            return Ok(montante);
         }
     }
 }
