@@ -53,7 +53,7 @@ namespace CalculoJurosService.Integration.Tests
             .ConfigureAppConfiguration((hostingContext, config) =>
             {
                 config.AddJsonFile(
-                  $"{baseDir}\\local.settings.json",
+                  $"{baseDir}{Path.DirectorySeparatorChar}local.settings.json",
                   optional: true,
                   reloadOnChange: false);
             }));
