@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.Configuration;
+using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -45,13 +46,14 @@ namespace CalculoJurosService.Integration.Tests
         [Fact]
         public async Task GetShowCode_InvalidRepoUrl_BadRequest()
         {
+            var baseDir = Path.GetDirectoryName(typeof(ShowCodeTest).Assembly.Location);
             var invalidServer = new TestServer(new WebHostBuilder()
             .UseStartup<Startup>()
             .UseEnvironment("Development")
             .ConfigureAppConfiguration((hostingContext, config) =>
             {
                 config.AddJsonFile(
-                  "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\tests\\CalculoJurosService.Integration.Tests\\local.settings.json",
+                  $"{baseDir}\\local.settings.json",
                   optional: true,
                   reloadOnChange: false);
             }));
