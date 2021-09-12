@@ -4,7 +4,7 @@ using Moq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Application.Tests
+namespace Application.Unit.Tests
 {
     public class IJurosServiceTests
     {
@@ -30,6 +30,9 @@ namespace Application.Tests
             Assert.Equal(result, montante);
         }
 
+
+        // não foi especificado que entradas não seriam válidas então não apliquei nenhuma validação nos parâmetros, caso fosse teria aplicado fluent validation a request
+        // e aqui esperaria que as validações fossem lancadas
         [Theory]
         [InlineData(-10, 0, -10)]
         [InlineData(10, -1, 9.90)]
