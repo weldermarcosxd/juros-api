@@ -1,0 +1,575 @@
+{
+  "Application.dll": {
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\Application\\DependencyInjection.cs": {
+      "Application.DependencyInjection": {
+        "Microsoft.Extensions.DependencyInjection.IServiceCollection Application.DependencyInjection::AddApplication(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "10": 5,
+            "11": 5,
+            "13": 5,
+            "14": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\Application\\Services\\JurosService.cs": {
+      "Application.Services.JurosService": {
+        "System.Void Application.Services.JurosService::.ctor(Application.Interfaces.ITaxaJurosService)": {
+          "Lines": {
+            "11": 2,
+            "12": 2,
+            "13": 2,
+            "14": 2
+          },
+          "Branches": []
+        }
+      },
+      "Application.Services.JurosService/<CalculaValorJurosAsync>d__2": {
+        "System.Void Application.Services.JurosService/<CalculaValorJurosAsync>d__2::MoveNext()": {
+          "Lines": {
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2,
+            "21": 2
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "CalculoJurosService.dll": {
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\CalculoJurosService\\Program.cs": {
+      "CalculoJurosService.Program": {
+        "System.Void CalculoJurosService.Program::Main(System.String[])": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Hosting.IHostBuilder CalculoJurosService.Program::CreateHostBuilder(System.String[])": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\CalculoJurosService\\Startup.cs": {
+      "CalculoJurosService.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration CalculoJurosService.Startup::get_Configuration()": {
+          "Lines": {
+            "16": 5
+          },
+          "Branches": []
+        },
+        "System.Void CalculoJurosService.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "24": 5,
+            "25": 5,
+            "26": 5,
+            "27": 5,
+            "28": 5,
+            "29": 5,
+            "30": 5
+          },
+          "Branches": []
+        },
+        "System.Void CalculoJurosService.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
+          "Lines": {
+            "33": 5,
+            "34": 5,
+            "35": 5,
+            "37": 5,
+            "38": 5,
+            "39": 5,
+            "40": 5,
+            "41": 5,
+            "42": 5,
+            "43": 5,
+            "44": 5,
+            "45": 10,
+            "46": 5
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            },
+            {
+              "Line": 34,
+              "Offset": 9,
+              "EndOffset": 18,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            }
+          ]
+        },
+        "System.Void CalculoJurosService.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "18": 5,
+            "19": 5,
+            "20": 5,
+            "21": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\CalculoJurosService\\Controllers\\CalculaJurosController.cs": {
+      "CalculoJurosService.Controllers.CalculaJurosController": {
+        "System.Void CalculoJurosService.Controllers.CalculaJurosController::.ctor(Microsoft.Extensions.Logging.ILogger`1<CalculoJurosService.Controllers.CalculaJurosController>,Application.Interfaces.IJurosService)": {
+          "Lines": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2
+          },
+          "Branches": []
+        }
+      },
+      "CalculoJurosService.Controllers.CalculaJurosController/<Get>d__3": {
+        "System.Void CalculoJurosService.Controllers.CalculaJurosController/<Get>d__3::MoveNext()": {
+          "Lines": {
+            "23": 2,
+            "24": 2,
+            "25": 2,
+            "26": 2,
+            "27": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\CalculoJurosService\\Controllers\\ShowCodeController.cs": {
+      "CalculoJurosService.Controllers.ShowCodeController": {
+        "Microsoft.AspNetCore.Mvc.IActionResult CalculoJurosService.Controllers.ShowCodeController::Get()": {
+          "Lines": {
+            "23": 2,
+            "24": 2,
+            "25": 2,
+            "26": 2,
+            "27": 1,
+            "29": 1,
+            "30": 2
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 46,
+              "EndOffset": 48,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 26,
+              "Offset": 46,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void CalculoJurosService.Controllers.ShowCodeController::.ctor(Microsoft.Extensions.Logging.ILogger`1<CalculoJurosService.Controllers.CalculaJurosController>,Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "CalculoJurosService.Integration.Tests.dll": {
+    "C:\\Users\\welde\\.nuget\\packages\\microsoft.net.test.sdk\\16.9.4\\build\\netcoreapp2.1\\Microsoft.NET.Test.Sdk.Program.cs": {
+      "AutoGeneratedProgram": {
+        "System.Void AutoGeneratedProgram::Main(System.String[])": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Infrastructure.dll": {
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\Infrastructure\\Swagger\\SwaggerConfig.cs": {
+      "Infrastructure.SwaggerConfig.SwaggerConfig": {
+        "System.Void Infrastructure.SwaggerConfig.SwaggerConfig::ConfigureSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "10": 5,
+            "11": 5,
+            "12": 4,
+            "13": 4,
+            "14": 9,
+            "15": 5
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.SwaggerConfig.SwaggerConfig::UseSwaggerConfig(Microsoft.AspNetCore.Builder.IApplicationBuilder)": {
+          "Lines": {
+            "18": 5,
+            "19": 5,
+            "20": 10,
+            "21": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\Infrastructure\\ResponsesDto\\ApiResponse.cs": {
+      "Infrastructure.ResponsesDto.ApiResponse": {
+        "System.Int32 Infrastructure.ResponsesDto.ApiResponse::get_StatusCode()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String Infrastructure.ResponsesDto.ApiResponse::get_Message()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.String Infrastructure.ResponsesDto.ApiResponse::GetDefaultMessageForStatusCode(System.Int32)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 12,
+              "EndOffset": 39,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 12,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 12,
+              "EndOffset": 57,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 12,
+              "EndOffset": 65,
+              "Path": 4,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 12,
+              "EndOffset": 73,
+              "Path": 5,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 45,
+              "EndOffset": 81,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 12,
+              "EndOffset": 89,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 45,
+              "EndOffset": 89,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Infrastructure.ResponsesDto.ApiResponse::.ctor(System.Int32,System.String)": {
+          "Lines": {
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0
+          },
+          "Branches": [
+            {
+              "Line": 8,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 8,
+              "Offset": 19,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\Infrastructure\\ResponsesDto\\ApiResponseError.cs": {
+      "Infrastructure.ResponsesDto.ApiResponseError": {
+        "System.String Infrastructure.ResponsesDto.ApiResponseError::get_Details()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.ResponsesDto.ApiResponseError::.ctor(System.Int32,System.String,System.String)": {
+          "Lines": {
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\Infrastructure\\ResponsesDto\\ApiValidationErrorResponse.cs": {
+      "Infrastructure.ResponsesDto.ApiValidationErrorResponse": {
+        "System.Collections.Generic.IEnumerable`1<System.String> Infrastructure.ResponsesDto.ApiValidationErrorResponse::get_Errors()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.ResponsesDto.ApiValidationErrorResponse::.ctor()": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\Infrastructure\\Refit\\RefitConfig.cs": {
+      "Infrastructure.Refit.RefitConfig": {
+        "System.Void Infrastructure.Refit.RefitConfig::ConfigureRefit(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "14": 5,
+            "15": 5,
+            "16": 5,
+            "17": 0,
+            "19": 5,
+            "20": 2,
+            "21": 2,
+            "22": 7,
+            "23": 5
+          },
+          "Branches": [
+            {
+              "Line": 16,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 16,
+              "Offset": 36,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 16,
+              "Offset": 54,
+              "EndOffset": 56,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 16,
+              "Offset": 54,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 5
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\Infrastructure\\Extensions\\ApplicationServiceExtensions.cs": {
+      "Infrastructure.Validation.ApplicationServiceExtensions": {
+        "System.Void Infrastructure.Validation.ApplicationServiceExtensions::ConfigureApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "11": 5,
+            "12": 10,
+            "13": 5,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 5,
+            "20": 0,
+            "21": 5,
+            "22": 10,
+            "23": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\Infrastructure\\Exceptions\\ExceptionMiddleware.cs": {
+      "Infrastructure.Exceptions.ExceptionMiddleware": {
+        "System.Void Infrastructure.Exceptions.ExceptionMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger`1<Infrastructure.Exceptions.ExceptionMiddleware>,Microsoft.Extensions.Hosting.IHostEnvironment)": {
+          "Lines": {
+            "18": 5,
+            "19": 5,
+            "20": 5,
+            "21": 5,
+            "22": 5,
+            "23": 5
+          },
+          "Branches": []
+        }
+      },
+      "Infrastructure.Exceptions.ExceptionMiddleware/<InvokeAsync>d__4": {
+        "System.Void Infrastructure.Exceptions.ExceptionMiddleware/<InvokeAsync>d__4::MoveNext()": {
+          "Lines": {
+            "26": 4,
+            "28": 4,
+            "29": 4,
+            "30": 4,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "41": 0,
+            "42": 0,
+            "44": 0,
+            "45": 0,
+            "46": 4
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 310,
+              "EndOffset": 312,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 37,
+              "Offset": 310,
+              "EndOffset": 326,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\Infrastructure\\Exceptions\\InvalidTaxaJurosServiceUrlException.cs": {
+      "Infrastructure.Exceptions.InvalidTaxaJurosServiceUrlException": {
+        "System.Void Infrastructure.Exceptions.InvalidTaxaJurosServiceUrlException::.ctor()": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Exceptions.InvalidTaxaJurosServiceUrlException::.ctor(System.String)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Exceptions.InvalidTaxaJurosServiceUrlException::.ctor(System.String,System.Exception)": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Exceptions.InvalidTaxaJurosServiceUrlException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\welde\\source\\repos\\weldermarcosxd\\juros-api\\src\\Infrastructure\\Config\\TaxaJurosServiceConfig.cs": {
+      "Infrastructure.Config.TaxaJurosServiceConfig": {
+        "System.String Infrastructure.Config.TaxaJurosServiceConfig::get_BaseURl()": {
+          "Lines": {
+            "5": 17
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

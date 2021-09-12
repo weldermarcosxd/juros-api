@@ -19,10 +19,14 @@ namespace CalculoJurosService.Controllers
         }
 
         [HttpGet]
-        public Uri Get()
+        public IActionResult Get()
         {
             _logger.LogInformation("Obtendo repositorio git");
-            return _configuration.GetValue<Uri>("GithubRepo");
+            var gitRepo = _configuration.GetValue<Uri>("GithubRepo");
+            if (gitRepo is null)
+                return BadRequest("O repositório não foi informado na app.settings");
+            
+            return Ok(gitRepo);
         }
     }
 }
