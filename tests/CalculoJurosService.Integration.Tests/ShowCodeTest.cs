@@ -10,24 +10,13 @@ using Xunit;
 namespace CalculoJurosService.Integration.Tests
 {
     // exige que TaxaJurosService esteja rodando na porta especificada no appsetiings de CalculoJurosService
-    public class ShowCodeTest
+    public class ShowCodeTest : IClassFixture<IntegrationTestAppFactory<Startup>>
     {
-        private readonly TestServer _server;
-        private readonly HttpClient _client;
+        private readonly IntegrationTestAppFactory<Startup> _factory;
 
-        public ShowCodeTest()
+        public ShowCodeTest(IntegrationTestAppFactory<Startup> factory)
         {
-            _server = new TestServer(new WebHostBuilder()
-            .UseStartup<Startup>()
-            .UseEnvironment("Development")
-            .ConfigureAppConfiguration((hostingContext, config) =>
-            {
-                config.AddJsonFile(
-                  "appsettings.json",
-                  optional: true,
-                  reloadOnChange: false);
-            }));
-            _client = _server.CreateClient();
+            _factory = factory;
         }
 
         [Fact]
@@ -35,7 +24,8 @@ namespace CalculoJurosService.Integration.Tests
         {
             var request = "/showmethecode";
 
-            var response = await _client.GetAsync(request);
+            var client = _factory.CreateClient();
+            var response = await client.GetAsync(request);
             response.EnsureSuccessStatusCode();
 
             var responseString = await response.Content.ReadAsStringAsync();
