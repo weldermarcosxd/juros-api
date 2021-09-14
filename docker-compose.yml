@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  calculojurosservice:
+    image: ${DOCKER_REGISTRY-}calculojurosservice
+    build:
+      context: .
+      dockerfile: src/CalculoJurosService/Dockerfile
+    ports:
+      - "5001:80"
+      - "5002:443"
+
+
+  taxajurosservice:
+    image: ${DOCKER_REGISTRY-}taxajurosservice
+    build:
+      context: .
+      dockerfile: src/TaxaJurosService/Dockerfile
+    
+networks:
+  default:
+    external:
+      name: juros-network
+
