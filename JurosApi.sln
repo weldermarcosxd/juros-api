@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxaJurosService", "src\Tax
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Unit.Tests", "tests\Application.Unit.Tests\Application.Unit.Tests.csproj", "{5D53F510-B458-4215-82EE-38F54F7A02C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoJurosService.Integration.Tests", "tests\CalculoJurosService.Integration.Tests\CalculoJurosService.Integration.Tests.csproj", "{E80E0C58-D378-45CC-9E6E-5880193F5C6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculoJurosService.Integration.Tests", "tests\CalculoJurosService.Integration.Tests\CalculoJurosService.Integration.Tests.csproj", "{E80E0C58-D378-45CC-9E6E-5880193F5C6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxaJurosService.Integration.Tests", "tests\TaxaJurosService.Integration.Tests\TaxaJurosService.Integration.Tests.csproj", "{A1DB3B75-5B17-4E3B-84D8-34AE9D6C4FD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxaJurosService.Integration.Tests", "tests\TaxaJurosService.Integration.Tests\TaxaJurosService.Integration.Tests.csproj", "{A1DB3B75-5B17-4E3B-84D8-34AE9D6C4FD6}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{916EC2CC-1D3C-42A9-8092-8E0257C8D6EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{A1DB3B75-5B17-4E3B-84D8-34AE9D6C4FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1DB3B75-5B17-4E3B-84D8-34AE9D6C4FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1DB3B75-5B17-4E3B-84D8-34AE9D6C4FD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{916EC2CC-1D3C-42A9-8092-8E0257C8D6EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{916EC2CC-1D3C-42A9-8092-8E0257C8D6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{916EC2CC-1D3C-42A9-8092-8E0257C8D6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{916EC2CC-1D3C-42A9-8092-8E0257C8D6EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,7 +15,7 @@ Os requisitos foram disponibilizados no seguint [link](https://drive.google.com/
 
 ## Extras
 
-1. :x: Utilização de Docker
+1. :heavy_check_mark: Utilização de Docker
 2. :heavy_check_mark: Teste de integração da API em linguagem de sua preferência (Damos
 importância para pirâmide de testes)
 3. :heavy_check_mark: Utilizar swagger
