@@ -34,6 +34,7 @@ importância para pirâmide de testes)
       2. "/calculaJuros" = Esse recurso faz chamada a camada de application para execução da regra de negócio e utiliza o [Refit](https://github.com/reactiveui/refit) configurado na camada de infrastructure para realizar a consulta da taxa de juros na API TaxaJurosService (o endereço deve ser informado em "TaxaJurosServiceConfig:BaseURl" no appsettings). Tudo isso para fazer o cálculo dos juros utilizando os parâmetros recebidos via url.
 * Os fontes na pasta tests foram divididos entre 3 projetos
   * Application.Unit.Tests: Responsável pelos testes de unidade da camada de aplicação. Os testes foram implementados utilizando [xUnit](https://xunit.net/) e [Moq](https://github.com/Moq/moq4/wiki/Quickstart)
-  * CalculoJurosService.Integration.Tests e TaxaJurosService.Integration.Tests: Ambos contêm os testes de integração referentes a cada API referenciada. Os testes utilizaram [xUnit](https://xunit.net/) e [Wiremock](https://github.com/WireMock-Net/WireMock.Net)     
+  * CalculoJurosService.Integration.Tests e TaxaJurosService.Integration.Tests: Ambos contêm os testes de integração referentes a cada API referenciada. Os testes utilizaram [xUnit](https://xunit.net/) e [Wiremock](https://github.com/WireMock-Net/WireMock.Net)  
+  * o [Github actions](https://github.com/weldermarcosxd/juros-api/actions) pode ser utilizado para validação das builds   
 
 
